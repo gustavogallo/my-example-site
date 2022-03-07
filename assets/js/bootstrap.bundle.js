@@ -6532,7 +6532,7 @@
   const Default = {
     animation: true,
     autohide: true,
-    delay: 5000
+    delay: 8000
   };
   const SELECTOR_DATA_DISMISS = '[data-bs-dismiss="toast"]';
   /**

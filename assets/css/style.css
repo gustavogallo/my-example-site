@@ -7393,8 +7393,26 @@ li.dropdown:hover > .dropdown-menu {
   font-size: 1.25rem !important;
 }
 
+@media screen and (max-width: 600px){
+  .fs-5{
+    font-size: 1rem !important;
+  }
+}
+
 .fs-6 {
   font-size: 1.10rem !important;
+}
+
+@media screen and (max-width: 600px){
+  .fs-6{
+    font-size: 0.9rem !important;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .fs-7{
+    font-size: 0.8rem !important;
+  }
 }
 
 .fst-italic {
@@ -11250,7 +11268,7 @@ li.dropdown:hover > .dropdown-menu {
 }
 
 .testimonials {
-  position: relative;
+  position: sticky;
   padding: 0;
   background: linear-gradient(to right, #5c34ad, #a55eea);
 }

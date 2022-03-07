@@ -246,9 +246,11 @@
           <h3 class="display-3--title mt-1">Ser Júnior hoje, para ser gigante sempre!</h3>
           <p class="sobre fs-6" data-aos="zoom-in" data-aos-duration="2000">
             Formada em 2019, a SciTec Júnior surgiu com o sonho de ser grande e transformar o ecossistema universitário por meio da causa Movimento Empresa Júnior. Tivemos projetos premiados pela Bayer e pelo maior evento de empresas juniores do estado de São Paulo. Hoje, oferecemos serviços de excelência nas áreas de computação, engenharia biomédica e engenharia de materiais. </p>
+            <a href="quem-somos.html">
           <button type="button" class="rounded-pill btn-rounded border-primary">Saiba mais
             <span><i class="fas fa-arrow-right"></i></span>
           </button>
+        </a>
         </div>
       </div>
       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
@@ -277,10 +279,9 @@
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <!-- CAROUSEL ITEM 1 -->
-          <div class="carousel-item active">
-            <!-- testimonials card  -->
+        <!--  
             <div class="testimonials__card">
-              <p class="fs-7">
+              <p class="fs-6">
                 <i class="fas fa-quote-left"></i>
                 A equipe da Scitec jr. foi de grande auxílio na organização dos dados do escopo inicial da Startup que estou estruturando. Foram profissionais e éticos. Recomendo o serviço. 
                 <i class="fas fa-quote-right"></i>
@@ -293,18 +294,17 @@
                 </div>
               </p>
             </div>
-            <!-- client picture  -->
             <div class="testimonials__picture">
               <img src="images/testimonials/alexandre.jpg" alt="client-1 picture" class="rounded-circle img-fluid">
             </div>
-            <!-- client name & role  -->
             <div class="testimonials__name">
               <h3>Alexandre Almeida</h3>
               <p class="fw-light">Empreendedor<br><strong>Projeto ISEE</strong></p>
             </div>
-          </div>     
+          </div>     -->
+
           <!-- CAROUSEL ITEM 2 -->
-          <div class="carousel-item">
+          <div class="carousel-item active">
             <!-- testimonials card  -->
             <div class="testimonials__card">
               <p class="fs-7">
@@ -338,7 +338,6 @@
                 <i class="fas fa-quote-left"></i>
                 Estive na empresa Jr. desde o meu primeiro ano de universidade e pude me desenvolver juntamente com a empresa. Através das vivências em treinamentos, clima organizacional, projetos e eventos, desenvolvi softskills em liderança, comunicação e solução de problemas.
                 Todos os desafios encarados no planejamento estratégico, auditoria de eventos e regulamentação fiscal se tornaram cases reais que direcionaram minha carreira e oportunidades no mercado de trabalho. 
-
                 <i class="fas fa-quote-right"></i>
                 <div class="ratings p-1">
                   <i class="fas fa-star"></i>
@@ -365,7 +364,7 @@
             <div class="testimonials__card">
               <p class="fs-7">
                 <i class="fas fa-quote-left"></i>
-                Foi umas melhores experiências que já vivenciei! Tive a oportunidade de conhecer a melhor eu mesma , conhecer pessoas incríveis e conhecer um movimento fantástico o qual une uma rede imparavel em prol de um mesmo propósito. Digo com orgulho que não seria a mesma sem a SciTec Jr, foram dois anos de muito aprendizados que hoje são diferenciais na minha vida pessoal e profissional. 
+                Foi umas melhores experiências que já vivenciei! Tive a oportunidade de conhecer a melhor eu mesma, conhecer pessoas incríveis e conhecer um movimento fantástico o qual une uma rede imparavel em prol de um mesmo propósito. Digo com orgulho que não seria a mesma sem a SciTec Jr, foram dois anos de muito aprendizados que hoje são diferenciais na minha vida pessoal e profissional. 
                 <i class="fas fa-quote-right"></i>
                 <div class="ratings p-1">
                   <i class="fas fa-star"></i>
@@ -414,7 +413,7 @@
 
     <!-- START THE CTA CONTENT  -->
     <div class="row text-white">
-      <div class="col-12 col-lg-6 gradient shadow p-3">
+      <div class="col-12 col-lg-6 gradient shadow p-3 p-3-mobile">
         <div class="cta-info w-100">
           <h4 class="display-4 fw-bold">Movimento Empresa Júnior</h4>
           <p class="fs-5">
@@ -638,13 +637,11 @@
     <div class="row text-center">
       <h1 class="display-3 fs-1 fw-bold text-capitalize">Se interessou? Entre em contato conosco!</h1>
       <div class="heading-line"></div>
-
     </div>
 
     <!-- START THE CTA CONTENT  -->
-    <section id="contact">
     <div class="row text-white">
-      <div class="col-12 col-lg-6 gradient shadow p-3">
+      <div class="col-12 col-lg-6 gradient shadow p-3 p-3-mobile">
         <div class="cta-info w-100">
           <h4 class="display-4 fs-1 fw-bold">Fale com um de nossos especialistas!</h4>
           <p class="lh-lg">
@@ -661,24 +658,21 @@
       <div class="col-12 col-lg-6 bg-white shadow p-3">
         <div class="form w-100 pb-2">
           <h4 class="display-3--title mb-5">Comece seu projeto!</h4>
-          <form action="#" class="row">
+          <form action="envia_fale.php" method="post" name="form">
             <div class="col-lg-6 col-md mb-3">
-              <input type="text" placeholder="Nome" id="inputFirstName" class="shadow form-control form-control-lg">
+              <input name="nome" type="text" placeholder="Nome" id="inputFirstName" class="shadow form-control form-control-lg">
             </div>
             <div class="col-lg-6 col-md mb-3">
-              <input type="text" placeholder="Sobrenome" id="inputLastName" class="shadow form-control form-control-lg">
+              <input name="sobrenome" type="text" placeholder="Sobrenome" id="inputLastName" class="shadow form-control form-control-lg">
             </div>
             <div class="col-lg-12 mb-3">
-              <input type="email" placeholder="Email" id="inputEmail" class="shadow form-control form-control-lg">
+              <input name="email" type="email" placeholder="Email" id="inputEmail" class="shadow form-control form-control-lg">
             </div>
             <div class="col-lg-12 mb-3">
               <textarea name="message" placeholder="Insira sua mensagem" id="message" rows="8" class="shadow form-control form-control-lg"></textarea>
             </div>
             <div class="text-center d-grid mt-1">
-              <button type="button" class="btn btn-primary rounded-pill pt-3 pb-3">
-                submit
-                <i class="fas fa-paper-plane"></i>
-              </button>
+            <input type="submit" class="btn btn-primary rounded-pill pt-3 pb-3">
             </div>
           </form>
         </div>
